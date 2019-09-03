@@ -1,0 +1,6 @@
+  <h1 [ngStyle]="{'color':'#7b1fa2'}">Lista de albuns</h1>
+  <mat-card *ngFor="let album of albuns" [ngStyle]="{ 'flex-direction': 'row', 'justify-content' : 'space-between', 'display' : 'flex', 'margin' : '1rem'}">
+      {{ album.id }} - {{ album.title }}
+    <mat-icon matListIcon [ngStyle]="{'color':'#00f1ff'}">photo_album</mat-icon>
+    
+  </mat-card>

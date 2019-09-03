@@ -1,0 +1,16 @@
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <h1>Olá!</h1>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/posts'"> Postagens </a>
+      <a mat-button [routerLink]="'/albuns'"> Albuns </a>
+      <a mat-button [routerLink]="'/todos'"> To-Dos </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<div layout="column">
+  <div flex class="content"><router-outlet></router-outlet></div>
+</div>

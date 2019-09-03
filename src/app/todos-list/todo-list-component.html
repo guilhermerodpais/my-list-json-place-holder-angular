@@ -1,0 +1,6 @@
+  <h1 [ngStyle]="{'color':'#7b1fa2'}">Lista de afazeres</h1>
+  <mat-card *ngFor="let todo of todos" [ngStyle]="{ 'flex-direction': 'row', 'justify-content' : 'space-between', 'display' : 'flex', 'margin' : '1rem'}">
+    {{ todo.title }}
+    <mat-icon matListIcon [ngStyle]="{'color':getColor(todo.completed)}">{{ todo.completed ? 'check_circle' : 'cancel' }}</mat-icon>
+    
+  </mat-card>

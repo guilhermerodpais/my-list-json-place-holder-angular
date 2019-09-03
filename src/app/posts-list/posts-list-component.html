@@ -1,0 +1,11 @@
+  <h1 [ngStyle]="{'color':'#7b1fa2'}">Lista de Postagens</h1>
+  <mat-expansion-panel *ngFor="let post of posts" [ngStyle]="{ 'margin': '1rem', 'background' : '#868484'}">
+    <mat-expansion-panel-header  [ngStyle]="{ 'background': '#424242'}">
+      <mat-panel-title>
+        {{ post.title }}  
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+   
+    <p>{{ post.body }}  </p>
+  </mat-expansion-panel>
+  
